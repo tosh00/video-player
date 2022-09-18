@@ -85,6 +85,7 @@ export class Player extends HTMLElement {
     this.container = this.querySelector(".player-container");
     this.video = this.querySelector("video");
     this.video.playbackRate = this.playbackSpeed;
+    this.video.tabIndex = 0;
     this.controls = this.querySelector(".controls");
     this.timeline = this.querySelector(".timeline");
     this.timeline.max = this.timelineSteps;
